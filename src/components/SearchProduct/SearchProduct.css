@@ -1,0 +1,73 @@
+.search-product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.85rem;
+  height: 100%;
+}
+
+.search-product-link {
+  text-decoration: none;
+  color: #0f1111;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.search-product-link:hover .search-product-name {
+  color: #c7511f;
+}
+
+.search-product-img-wrap {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-product-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.search-product-name {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: #0f1111;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.search-product-price {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.search-product-price::first-letter {
+  font-size: 0.72em;
+}
+
+.search-product-delivery {
+  font-size: 0.78rem;
+  color: #0f1111;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-text-only {
+  align-self: flex-start;
+  font-size: 0.82rem;
+  padding: 0;
+}
+
+.btn-amazon-yellow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,109 @@
+.search-shell {
+  background: #eaeded;
+  min-height: 60vh;
+  display: flex;
+  gap: 1rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0.85rem;
+}
+
+.filters {
+  width: 240px;
+  flex-shrink: 0;
+  padding: 1rem;
+  align-self: flex-start;
+  position: sticky;
+  top: 0;
+}
+
+.filters-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.filter-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-fieldset legend {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.search-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.radio-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.filter-hint {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #565959;
+  line-height: 1.35;
+}
+
+.search-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-header {
+  margin-bottom: 0.75rem;
+}
+
+.results-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.results-sub {
+  font-size: 0.85rem;
+  color: #565959;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.no-results {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.amazon-text-link-inline {
+  color: #007185;
+  text-decoration: none;
+}
+
+.amazon-text-link-inline:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .search-shell {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+    position: static;
+  }
+}

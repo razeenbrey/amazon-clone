@@ -1,0 +1,278 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.nav-belt {
+  width: 100%;
+  background: #131921;
+  color: #fff;
+}
+
+.nav-belt-top {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem 0.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.nav-mobile-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-mobile-toggle:hover {
+  border-color: #fff;
+}
+
+@media (max-width: 840px) {
+  .nav-mobile-toggle {
+    display: flex;
+  }
+
+  .location {
+    display: none;
+  }
+
+  .nav-belt-bottom {
+    padding-left: 0.25rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-belt-bottom .nav-butt:nth-child(n + 5) {
+    display: none;
+  }
+}
+
+.nav-left {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 96px;
+  height: auto;
+  object-fit: contain;
+}
+
+.plain-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0.15rem;
+  padding-bottom: 0.15rem;
+}
+
+.location-pin {
+  font-size: 1rem;
+}
+
+.location-info .loc.reg-text {
+  display: block;
+  color: #ccc;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.nav-center:focus-within {
+  border-color: #f08804;
+  box-shadow: 0 0 0 2px #232f3e;
+}
+
+@media (max-width: 520px) {
+  .dropdown {
+    display: none !important;
+  }
+
+  .nav-center {
+    height: 36px;
+  }
+}
+
+.dropdown {
+  background: #e6e6e6;
+  border: none;
+  border-right: 1px solid #cdcdcd;
+  padding: 0 0.65rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+  color: #0f1111;
+  flex-shrink: 0;
+}
+
+.search-bar {
+  flex: 1;
+  border: none;
+  padding: 0 0.6rem;
+  font-size: 0.92rem;
+  outline: none;
+  min-width: 0;
+}
+
+.search-button {
+  width: 48px;
+  border: none;
+  background: #febd69;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background: #f3a847;
+}
+
+.search-button .material-symbols-outlined {
+  color: #0f1111;
+  font-size: 22px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.header-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 50px;
+  padding: 0.15rem 0.55rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-button:hover {
+  border-color: #fff;
+}
+
+.accounts-btn .reg-text {
+  font-size: 0.72rem;
+  color: #fff;
+}
+
+.basket-link {
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.basket-wrap {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 2rem;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -2px;
+  left: 16px;
+  background: #f08804;
+  color: #131921;
+  font-size: 0.68rem;
+  font-weight: 700;
+  min-width: 1.05rem;
+  height: 1.05rem;
+  padding: 0 0.22rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.reg-text {
+  font-size: 0.74rem;
+  font-weight: 400;
+}
+
+.bold-text {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.nav-belt-bottom {
+  background: #232f3e;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0.15rem 0.5rem 0.35rem;
+}
+
+.nav-belt-bottom::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-butt {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  padding: 0.4rem 0.55rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.nav-butt:hover {
+  border: none;
+}
+
+.nav-butt .material-symbols-outlined {
+  font-size: 1rem;
+}
+
+.all-dept {
+  font-weight: 700;
+  margin-right: 0.15rem;
+}

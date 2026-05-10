@@ -1,0 +1,93 @@
+.site-footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.back-to-top {
+  width: 100%;
+  border: none;
+  background: #37475a;
+  color: #fff;
+  padding: 0.85rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.back-to-top:hover {
+  background: #495769;
+}
+
+.sign-in-footer-strip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 2.5rem 1rem;
+  background: #fff;
+  border-top: 1px solid #e3e6e6;
+}
+
+.footer-prompt-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.btn-compact {
+  max-width: 240px;
+  width: 100%;
+}
+
+.footer-new-customer {
+  font-size: 0.75rem;
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.footer-new-customer .caption {
+  color: #0f1111;
+}
+
+.amazon-inline-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #007185;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.amazon-inline-link:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.amazon-dark-panel {
+  background: #131a22;
+  color: #ddd;
+  padding: 2rem 1rem 1.5rem;
+  text-align: center;
+}
+
+.footer-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links-row a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.78rem;
+}
+
+.footer-links-row a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 0.72rem;
+  color: #999;
+}

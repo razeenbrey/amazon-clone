@@ -1,0 +1,82 @@
+.signin-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.signin-dialog {
+  background: #fff;
+  max-width: 380px;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(15, 17, 17, 0.2);
+}
+
+.signin-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.65rem;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #565959;
+}
+
+.signin-close:hover {
+  color: #c45500;
+}
+
+.signin-dialog h2 {
+  font-size: 1.65rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.signin-sub {
+  font-size: 0.85rem;
+  color: #565959;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.signin-form label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  margin-top: 0.65rem;
+}
+
+.signin-form input {
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.signin-form .btn-amazon-yellow {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.signin-signed .signin-email {
+  font-size: 0.9rem;
+  color: #565959;
+  margin: 0.25rem 0 1rem;
+}
+
+.signin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

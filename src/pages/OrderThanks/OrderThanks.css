@@ -1,0 +1,36 @@
+.thanks-page {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.thanks-card {
+  padding: 1.75rem;
+}
+
+.thanks-card h1 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.thanks-card p {
+  color: #0f1111;
+  margin-bottom: 1.25rem;
+  line-height: 1.45;
+}
+
+.thanks-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.amazon-text-link-inline {
+  color: #007185;
+}
+
+.amazon-text-link-inline:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}

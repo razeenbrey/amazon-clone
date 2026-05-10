@@ -1,0 +1,139 @@
+.cart-page .page-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.cart-empty {
+  margin-bottom: 1rem;
+  color: #0f1111;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr minmax(240px, 280px);
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 840px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cart-lines {
+  padding: 0;
+}
+
+.cart-line {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #e3e6e6;
+}
+
+@media (max-width: 600px) {
+  .cart-line {
+    grid-template-columns: 88px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .cart-line-price {
+    grid-column: 2;
+    justify-self: end;
+  }
+}
+
+.cart-line:last-child {
+  border-bottom: none;
+}
+
+.cart-line-img-wrap {
+  border: none;
+  padding: 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+.cart-line-img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.cart-line-body {
+  min-width: 0;
+}
+
+.cart-line-title {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #007185;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  padding: 0;
+}
+
+.cart-line-title:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.cart-line-stock {
+  margin: 0.35rem 0;
+  font-size: 0.8rem;
+}
+
+.in-stock-label {
+  color: #007600;
+}
+
+.out-stock-label {
+  color: #c45500;
+}
+
+.cart-line-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.cart-line-controls select {
+  padding: 0.2rem;
+  border-radius: 6px;
+  border: 1px solid #d5d9d9;
+}
+
+.cart-line-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cart-summary-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.cart-summary-green {
+  color: #007600;
+  font-size: 0.95rem;
+}
+
+.cart-subtotal {
+  font-size: 1rem;
+}
+
+.cart-mini-hint {
+  font-size: 0.75rem;
+  color: #565959;
+  line-height: 1.3;
+}
